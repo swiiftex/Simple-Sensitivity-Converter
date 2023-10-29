@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33627.172
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleSensitivityConverter", "SimpleSensitivityConverter.csproj", "{2E7C6F5D-B505-4C60-802C-050698F6C1AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E7C6F5D-B505-4C60-802C-050698F6C1AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E7C6F5D-B505-4C60-802C-050698F6C1AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E7C6F5D-B505-4C60-802C-050698F6C1AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E7C6F5D-B505-4C60-802C-050698F6C1AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EA37B1B3-5B8F-423F-AB20-F6F5C140ED8D}
+	EndGlobalSection
+EndGlobal
