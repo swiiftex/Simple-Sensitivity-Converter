@@ -9,3 +9,11 @@ F:\GitHub\Simple-Sensitivity-Converter\WindowsFormsApp1\bin\Debug\SimpleSensivit
 F:\GitHub\Simple-Sensitivity-Converter\WindowsFormsApp1\obj\Debug\SimpleSensitivityConverter.Properties.Resources.resources
 F:\GitHub\Simple-Sensitivity-Converter\WindowsFormsApp1\obj\Debug\SimpleSensivitiyConverter.exe
 F:\GitHub\Simple-Sensitivity-Converter\WindowsFormsApp1\obj\Debug\SimpleSensivitiyConverter.pdb
+F:\GitHub\Simple-Sensitivity-Converter\WindowsFormsApp1\bin\Debug\SimpleSensivitiyConverter.exe.manifest
+F:\GitHub\Simple-Sensitivity-Converter\WindowsFormsApp1\bin\Debug\SimpleSensivitiyConverter.application
+F:\GitHub\Simple-Sensitivity-Converter\WindowsFormsApp1\obj\Debug\SimpleSensivitiyConverter.TrustInfo.xml
+F:\GitHub\Simple-Sensitivity-Converter\WindowsFormsApp1\obj\Debug\SimpleSensivitiyConverter.exe.manifest
+F:\GitHub\Simple-Sensitivity-Converter\WindowsFormsApp1\obj\Debug\SimpleSensivitiyConverter.application
+F:\GitHub\Simple-Sensitivity-Converter\WindowsFormsApp1\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+F:\GitHub\Simple-Sensitivity-Converter\WindowsFormsApp1\obj\Debug\SimpleSensitivityConverter.csproj.Fody.CopyLocal.cache
+F:\GitHub\Simple-Sensitivity-Converter\WindowsFormsApp1\obj\Debug\SimpleSensitivityConverter.csproj.CopyComplete

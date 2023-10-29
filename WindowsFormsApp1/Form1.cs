@@ -20,10 +20,10 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-
         private void Form1_Load(object sender, EventArgs e)
         {
-            txtCM360.Text = "";
+            txtCM360.Text = SimpleSensitivityConverter.Properties.Settings.Default.cm360.ToString();
+            txtDPI.Text = SimpleSensitivityConverter.Properties.Settings.Default.DPI.ToString();
             // Add key-value pairs to the dictionary
             StringValuesMap["Source"] = 41563.64;
             StringValuesMap["Unreal"] = 365.796580;
@@ -68,6 +68,13 @@ namespace WindowsFormsApp1
                 return "ERR";
             }
 
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            SimpleSensitivityConverter.Properties.Settings.Default.cm360 = float.Parse(txtCM360.Text);
+            SimpleSensitivityConverter.Properties.Settings.Default.DPI = int.Parse(txtDPI.Text);
+            SimpleSensitivityConverter.Properties.Settings.Default.Save();
         }
     }
 }

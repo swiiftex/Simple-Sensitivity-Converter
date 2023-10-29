@@ -34,5 +34,17 @@ namespace SimpleSensitivityConverter.Properties {
                 this["cm360"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1600")]
+        public int DPI {
+            get {
+                return ((int)(this["DPI"]));
+            }
+            set {
+                this["DPI"] = value;
+            }
+        }
     }
 }

@@ -5,5 +5,8 @@
     <Setting Name="cm360" Type="System.Single" Scope="User">
       <Value Profile="(Default)">50</Value>
     </Setting>
+    <Setting Name="DPI" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1600</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
