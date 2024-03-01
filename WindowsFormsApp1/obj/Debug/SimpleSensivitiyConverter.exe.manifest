@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SimpleSensivitiyConverter.exe" size="39344">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SimpleSensivitiyConverter.exe" size="41392">
       <assemblyIdentity name="SimpleSensivitiyConverter" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>4yrm6JINlCls8cm+Qsj2+9uJRfnu1DaJ9WmnhGnzFPE=</dsig:DigestValue>
+        <dsig:DigestValue>Ole3UpWolbwYIQDAk7BkeD+77PY3DETwgdmBPVyM6aE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

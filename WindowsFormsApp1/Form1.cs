@@ -13,11 +13,29 @@ namespace WindowsFormsApp1
 
     public partial class Form1 : Form
     {
-        public Dictionary<string, double> StringValuesMap = new Dictionary<string, double>();
+        public static List<Game> Games = new List<Game>();
 
         public Form1()
         {
             InitializeComponent();
+        }
+
+        public struct Game
+        {
+            public string Name;
+            public double SensitivityCoefficient;
+            public string FileLocation;
+
+        }
+
+        public void AddGame(string aName, double SensCoeff, string ConfLocation)
+        {
+            Games.Add(new Game{ FileLocation = ConfLocation, Name = aName, SensitivityCoefficient = SensCoeff });
+        }
+
+        public double GetCoeff(string GameName)
+        {
+            return Games.Find(Game => Game.Name == GameName).SensitivityCoefficient;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -25,19 +43,31 @@ namespace WindowsFormsApp1
             txtCM360.Text = SimpleSensitivityConverter.Properties.Settings.Default.cm360.ToString();
             txtDPI.Text = SimpleSensitivityConverter.Properties.Settings.Default.DPI.ToString();
             // Add key-value pairs to the dictionary
-            StringValuesMap["Source"] = 41563.64;
-            StringValuesMap["Unreal"] = 365.796580;
-            StringValuesMap["VALORANT"] = 13062.857;
-            StringValuesMap["THE FINALS"] = 11592.210438;
-            StringValuesMap["BF5/2042"] = 398.977267;
-            StringValuesMap["CoD 2019-2024"] = 138545.45455;
-            StringValuesMap["CoD BO2"] = 41563.64;
-            StringValuesMap["CoD BO3"] = 43362.86989;
+            AddGame("Source", 41563.64, "");
+            AddGame("Unreal", 365.796580, "");
+            AddGame("Unity", 41563.6364, "");
+            AddGame("VALORANT", 13062.857, "");
+            AddGame("THE FINALS", 11592.210438, "");
+            AddGame("Battlefield 5-2042", 398.977267, "");
+            AddGame("CoD 2019-2024", 138545.45455, "");
+            AddGame("CoD BO2", 41563.64, "");
+            AddGame("CoD BO3", 43362.86989, "");
+            AddGame("Dark and Darker", 5225.6654, "");
+            AddGame("Deceive Inc.", 40193.4066, "");
+            AddGame("Destiny 2", 46181.8182, "");
+            AddGame("Dirty Bomb", 41615.36, "");
+            AddGame("DOOM (2016)", 41563.6364, "");
+            AddGame("Fortnite", 41152.1152, "");
+            AddGame("KovaaK's", 41563.6364, "");
+            AddGame("Krunker", 41563.5103, "");
+            AddGame("Escape from Tarkov", 41563.6364, "");
+            AddGame("Overwatch", 41605.2416, "");
+
 
             comboBoxMethod.Items.Clear();
-            foreach(string x in StringValuesMap.Keys)
+            foreach(Game x in Games)
             {
-                comboBoxMethod.Items.Add(x);
+                comboBoxMethod.Items.Add(x.Name);
             }
         }
 
@@ -54,8 +84,7 @@ namespace WindowsFormsApp1
                     int.TryParse(txtDPI.Text, out int mouseDpi))
                 {
                     // Source engine games use a default FOV (Field of View) of 90 degrees.
-                    double inGameSensitivity = (StringValuesMap[comboBoxMethod.Text] / mouseDpi) / realWorldCm;
-
+                    double inGameSensitivity = GetCoeff(comboBoxMethod.Text) / mouseDpi / realWorldCm;
                     return inGameSensitivity.ToString();
                 }
                 else
@@ -67,7 +96,6 @@ namespace WindowsFormsApp1
             {
                 return "ERR";
             }
-
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
